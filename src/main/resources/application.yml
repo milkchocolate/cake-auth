@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          eatcake:
+            client-id: client-id
+            client-secret: client-secret
+            authorization-grant-type: client_credentials
+            scope: "eat/read"
+        provider:
+          eatcake:
+            token-uri: https://dev-eat.auth.eu-central-1.amazoncognito.com/oauth2/token
+  main:
+    web-application-type: none
